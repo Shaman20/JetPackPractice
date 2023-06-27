@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/recipieList">
+
+    <fragment
+        android:id="@+id/recipieList"
+        android:name="com.example.recipieapp.RecipieList"
+        android:label="RecipieList" >
+        <action
+            android:id="@+id/action_recipieList_to_recipieFragment"
+            app:destination="@id/recipieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipieFragment"
+        android:name="com.example.recipieapp.RecipieFragment"
+        android:label="RecipieFragment" />
+</navigation>
